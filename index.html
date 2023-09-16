@@ -58,41 +58,16 @@
               id="form-register"
               aria-labelledby="form-tab"
             >
-              <form>
-                <div class="form-group">
-                  <label for="nama">Nama</label>
-                  <input
-                    id="nama"
-                    type="text"
-                    class="form-control"
-                    placeholder="Nama"
-                  />
-                </div>
-
-                <div class="form-group">
-                  <label for="umur">Umur</label>
-                  <input
-                    id="umur"
-                    type="number"
-                    class="form-control"
-                    placeholder="Umur"
-                  />
-                </div>
-
-                <div class="form-group">
-                  <label for="uang-sangu">Uang Sangu</label>
-                  <input
-                    id="uang-sangu"
-                    type="number"
-                    class="form-control"
-                    placeholder="Uang Sangu"
-                  />
-                </div>
-
-                <button id="submit-button" class="btn btn-primary">
-                  Submit
-                </button>
-              </form>
+             <div class="border-2 p-5 space-y-3 bg-teal-400 flex-auto w-80 p-5 max-w-md mr-5 rounded-md">
+            <h1 class="text-center mt-4">Form Registrasi</h1>
+            <label for="nama" class="block uppercase">Nama</label>
+            <input id="input-nama" name="nama" type="text" placeholder="Masukan nama..." class="block px-2 py-2 border-2 w-full"/>
+            <label for="umur" class="block uppercase">Umur</label>
+            <input id="input-umur" name="umur" type="number" placeholder="Masukan umur..." class="block px-2 py-2 border-2 w-full"/>
+            <label for="uangSangu" class="block uppercase">Uang Sangu</label>
+            <input id="input-uang" name="uangSangu" type="number" placeholder="insert year here..." class="block px-2 py-2 border-2 w-full"/>
+            <button id="submit-button" class="text-center px-3 py-2 bg-[#D2DE32] block w-full">SUBMIT</button>
+        </div>
             </div>
             <div
               role="tabpanel"
@@ -100,7 +75,6 @@
               id="list-register"
               aria-labelledby="list-tab"
             >
-              <p></p>
               <table class="table caption-top">
                 <caption>
                   List Pendaftar
@@ -111,6 +85,7 @@
                     <th>Nama</th>
                     <th>Usia</th>
                     <th>Uang Sangu</th>
+                    <th>Aksi</th>
                   </tr>
                 </thead>
                 <tbody id="table-body">
@@ -119,17 +94,32 @@
                     <td>Maulana Rafinda</td>
                     <td>22</td>
                     <td>1</td>
-                    <td>
-                      <button class="bg-red-500 rounded-xl px-3">DELETE</button>
-                    </td>
                   </tr>
                 </tbody>
               </table>
+              <table style="width:100%">
+  <table style="width:100%">
+  <tr>
+    <th>Resume</th>
+  </tr>
+  <tbody id="table-body-resume">
+    <tr>
+    <th>Rata-rata uang sangu pendaftar :</th>
+    <td>100000</td>
+  </tr>
+  <tr>
+    <th>Rata-rata usia pendaftar :</th>
+    <td>25</td>
+  </tr>
+  </tbody>
+</table>
+            </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
 
     <script src="script.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
