@@ -95,16 +95,16 @@ const renderData = (tableBody) => {
             const titleElement = rowElement.children[1]
             // const titleElement = rowElement.child
 
-            // Hapus melalui array bookList
+            // Hapus melalui array registerList
 
             registerList.forEach((register, index) => {
                 if (register.nama === titleElement.textContent) {
-                    // HAPUS ROW atau Baris
+                    // Delete ROW
                     registerList.splice(index, 1);
                 }
             })
 
-            // render ulang
+            // Render
             renderData(tableBody)
         })
 
